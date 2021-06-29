@@ -64,6 +64,7 @@ public class Palindromic {
         int n = str.length();
         int[] newStr = new int[n];
         int left = 0,right = 0;
+        // i = 1
         for (int i = 1; i < n - 1; i++) {
             int i_mrrior = 2 * left - i;
             System.out.println(i_mrrior);
