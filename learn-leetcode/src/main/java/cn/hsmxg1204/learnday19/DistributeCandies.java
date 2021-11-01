@@ -15,14 +15,10 @@ public class DistributeCandies {
         int length = candyType.length;
         int halfLength = length / 2;
         Set<Integer> set = new HashSet<>();
-        for (int i = 0; i < candyType.length; i++) {
-            set.add(candyType[i]);
+        for (int j : candyType) {
+            set.add(j);
         }
-        if(set.size() >= halfLength){
-            return halfLength;
-        }else{
-            return set.size();
-        }
+        return Math.min(set.size(), halfLength);
     }
 
     public static void main(String[] args) {
