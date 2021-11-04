@@ -1,4 +1,4 @@
-package learnday21;
+package cn.hsmxg1204.learnday21;
 
 import java.util.Arrays;
 
