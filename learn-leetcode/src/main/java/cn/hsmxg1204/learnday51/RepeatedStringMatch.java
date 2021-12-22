@@ -20,7 +20,7 @@ public class RepeatedStringMatch {
         return (bn + index - an - 1) / an + 2;
     }
 
-    public int strStr(String haystack, String needle) {
+    public static int strStr(String haystack, String needle) {
         int n = haystack.length(), m = needle.length();
         if (m == 0) {
             return 0;
