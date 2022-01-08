@@ -1,6 +1,8 @@
 package cn.hsmxg1204.learnday53;
 
+import java.text.MessageFormat;
 import java.util.ArrayDeque;
+import java.util.Calendar;
 import java.util.Deque;
 
 /**
@@ -36,5 +38,16 @@ public class SimplePath {
     public static void main(String[] args) {
         String path = "/a/./b/../../c/";
         System.out.println(simplePath(path));
+        Calendar cla = Calendar.getInstance();
+        String str = "今天是{0}年{1}月{2}日";
+        String newStr = MessageFormat.format(str,cla.get(Calendar.YEAR),
+                cla.get(Calendar.MONTH) + 1 ,cla.get(Calendar.DAY_OF_YEAR));
+
+
+        String str1 = "今天是%d年%d月%d日。%s";
+        String newStr2 = String.format(str1,cla.get(Calendar.YEAR),
+                cla.get(Calendar.MONTH) + 1 ,cla.get(Calendar.DAY_OF_YEAR),cla.getCalendarType());
+        System.out.println(newStr);
+        System.out.println(newStr2);
     }
 }
