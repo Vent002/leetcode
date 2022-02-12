@@ -5,11 +5,15 @@ import java.util.Map;
 
 /**
  * @Author gxming
- * @Description
+ * @Description 找出字符串中出现次数最多的字符
  * @CreateTime 2022-02-12 18:18
  */
-public class findMaxChar {
-
+public class FindMaxCountChar {
+    /**
+     *  使用hashmap 实现
+     * @param s
+     * @return
+     */
     public static char findMaxCountChar(String s){
         char[] chars = s.toCharArray();
         HashMap<Character, Integer> map = new HashMap<>();
